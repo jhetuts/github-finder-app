@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Alejandro H. Cartojano Jr.">
+    <title>Github Finder</title>
+    <link rel="stylesheet" href="assets/bootswatch/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-primary mb-3">
+        <div class="container">
+            <a href="#" class="navbar-brand">GF</a>
+        </div>
+    </nav>
+    <div class="container searchContainer">
+        <div class="search card card-body">
+            <h1>Search Github Users</h1>
+            <p class="lead">Enter a username to fetch a user profile and repositories</p>
+            <input type="text" name="" id="searchUser" class="form-control" placeholder="Github Username">
+        </div>
+        <hr>
+        <div id="profile"></div>
+        <div id="repos"></div>
+    </div>
+    <footer class="mt-5 p-3 text-center bg-light">
+        Github Finder &copy;
+    </footer>
+
+    <script src="assets/bootswatch/js/jquery-1.9.1.min.js"></script>
+    <script src="assets/bootswatch/js/bootstrap.js"></script>
+    <script src="library/github-library.js"></script>
+    <script src="ui/ui.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
